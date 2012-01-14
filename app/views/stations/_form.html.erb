@@ -1,0 +1,65 @@
+<%= form_for(@station) do |f| %>
+  <% if @station.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@station.errors.count, "error") %> prohibited this station from being saved:</h2>
+
+      <ul>
+      <% @station.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :space %><br />
+    <%= f.number_field :space %>
+  </div>
+  <div class="field">
+    <%= f.label :idle %><br />
+    <%= f.number_field :idle %>
+  </div>
+  <div class="field">
+    <%= f.label :openTime %><br />
+    <%= f.number_field :openTime %>
+  </div>
+  <div class="field">
+    <%= f.label :closeTime %><br />
+    <%= f.number_field :closeTime %>
+  </div>
+  <div class="field">
+    <%= f.label :cityId %><br />
+    <%= f.number_field :cityId %>
+  </div>
+  <div class="field">
+    <%= f.label :localId %><br />
+    <%= f.text_field :localId %>
+  </div>
+  <div class="field">
+    <%= f.label :manual %><br />
+    <%= f.check_box :manual %>
+  </div>
+  <div class="field">
+    <%= f.label :functioning %><br />
+    <%= f.check_box :functioning %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
