@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
+  space: 1
+  idle: 1
+  openTime: 1
+  closeTime: 1
+  cityId: 1
+  localId: MyString
+  manual: false
+  functioning: false
+
+two:
+  name: MyString
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
+  space: 1
+  idle: 1
+  openTime: 1
+  closeTime: 1
+  cityId: 1
+  localId: MyString
+  manual: false
+  functioning: false
